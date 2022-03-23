@@ -273,9 +273,9 @@ async def pingme(pong):
 @geez_cmd(pattern="baptis$")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**Aku membaptis engkau dalam nama Bapa, Anak dan Roh kudus, yaitu Tuhan Yesus Kristus**")
-    sleep(3)
-    await typew.edit("**Aminn**")
+    await typew.edit("**AKU MEMBAPTIS ENGKAU DALAM NAMA BAPA, ANAK DAN ROH KUDUS, YAITU TUHAN YESUS KRISTUS**")
+    sleep(5)
+    await typew.edit("**AMINNN**")
 
 
 CMD_HELP.update({
