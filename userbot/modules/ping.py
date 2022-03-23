@@ -14,6 +14,7 @@ import redis
 from speedtest import Speedtest
 
 from userbot import CMD_HANDLER as cmd
+from time import sleep
 from userbot.utils import edit_or_reply, geez_cmd
 from userbot import ALIVE_NAME, CMD_HELP, DEVS, StartTime
 from userbot.events import register
@@ -269,8 +270,16 @@ async def pingme(pong):
     await pong.edit(f"**Oᴡɴᴇʀ : {ALIVE_NAME}**\n`%sms`" % (duration))
 
 
+@geez_cmd(pattern="baptis$")
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**Aku membaptis engkau dalam nama Bapa, Anak dan Roh kudus, yaitu Tuhan Yesus Kristus**")
+    sleep(3)
+    await typew.edit("**Aminn**")
+
+
 CMD_HELP.update({
-    "ping": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}ping` | `{cmd}lping` | `{cmd}xping` | `{cmd}pings` | `{cmd}mping` | `{cmd}sping`\
+    "ping": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}ping` | `{cmd}lping` | `{cmd}xping` | `{cmd}pings` | `{cmd}mping` | `{cmd}baptis` | `{cmd}sping`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}speed`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
