@@ -119,7 +119,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/vckyou/Geez-UserBot")
+    "https://github.com/xrrmli/Geez-UserBot")
 
 # Owner Only
 DEVS = (
@@ -220,7 +220,7 @@ INLINE_PIC = os.environ.get(
     "INLINE_PIC") or "https://telegra.ph/file/9e3f0783db33698243b7d.png"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔶"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
 
 # Icon Help
 ICON_HELP = os.environ.get("ICON_HELP", "ꖒ")
@@ -477,8 +477,8 @@ with bot:
                 f"**Hey**, __I am using__  **GeezUserbot** \n\n"
                 f"       __Thanks For Using me__\n\n"
                 f" **Group Support :** [GEEZ](t.me/GeezSupport)\n"
-                f" **Owner Repo :** [Vicky](t.me/vckyaz)\n"
-                f" **Repo :** [GeezProjects](https://github.com/vckyou/Geez-Userbot)\n"
+                f" **Owner Repo :** [r](t.me/ramegg)\n"
+                f" **Repo :** [GeezProjects](https://github.com/xrrmli/Geez-Userbot)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -488,7 +488,7 @@ with bot:
                     [
                         custom.Button.url(
                             text="REPO GEEZ-USERBOT",
-                            url="https://github.com/vckyou/Geez-Userbot",
+                            url="https://github.com/xrrmli/Geez-Userbot",
                         )
                     ],
                     [
@@ -512,7 +512,7 @@ with bot:
                 result = builder.photo(
                     file=geezlogo,
                     link_preview=False,
-                    text=f"**Inline In GeezProjects**\n\n⛑️ **Owner** [Vicky](t.me/vckyaz)\n**Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**Inline In GeezProjects**\n\n⛑️ **Owner** [ram](t.me/ramegg)\n**Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -520,12 +520,12 @@ with bot:
                     title="Repository",
                     description="Repository GeezProjects",
                     url="https://t.me/geezsupport",
-                    text="**⚡ GeezProjects ⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [VICKY](https://t.me/vckyaz)\n✨ **Support :** @GeezSupport\n**Repository :** [GeezProjects](https://github.com/vckyou/Geez-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**⚡ GeezProjects ⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [ram](https://t.me/xrrmli)\n✨ **Support :** @GeezSupport\n**Repository :** [GeezProjects](https://github.com/xrrmli/Geez-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/vckyou/Geez-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/xrrmli/Geez-Userbot"
                             ),
                         ],
                     ],
@@ -536,7 +536,7 @@ with bot:
                     title="GeezProjects",
                     description="GeezProjects | Telethon",
                     url="https://t.me/GeezSupport",
-                    text=f"**GeezProjects**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [VICKY](t.me/vckyaz)\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @GeezProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**GeezProjects**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [ram](t.me/ramegg)\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @GeezProject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/geezprojectt"),
@@ -594,7 +594,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "GeezProjects",
-                                "https://github.com/vckyou/Geez-Userbot"),
+                                "https://github.com/xrrmli/Geez-Userbot"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/GeezSupport")]],
